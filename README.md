@@ -1,2 +1,5 @@
 # auditd_baseline
-Auditd rules baseline that can be useful to log suspicious activities
+
+Here is a bash script that contains a list of useful auditd rules that can be implemented.
+The rules are added in /etc/auditd/rules.d/audit.rules and the auditd service is then restarted in order to make the rules persistent.
+Is assumed that auditd service is installed
