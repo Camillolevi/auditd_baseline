@@ -1,5 +1,7 @@
 #!/bin/bash
 
+function add_auditd_rules() {
+
 # Check if auditd daemon and audit rules file exist
 
 if [ ! -f "/usr/sbin/auditd" ]; then
@@ -11,8 +13,6 @@ if [ ! -f "/etc/audit/rules.d/audit.rules" ]; then
   echo "Auditd rules file not found. Creating it now..."
   touch "/etc/audit/rules.d/audit.rules"
 fi
-
-function add_auditd_rules() {
 
 # Set the auditd rules file for auditing of enforcement actions
 
